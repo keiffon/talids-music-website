@@ -9,17 +9,49 @@
 <body>
     <div class="container">
         <div class="navbar">
-            <img src="media/logo.png" class="logo">
+            <img src="media/IMG_0697-removebg-preview.png" class="logo">
             <ul>
                 <li><a href="#">home</a></li>
-                <li><a href="#">about me</a></li>
+                <li><a href="#">music</a></li>
                 <li><a href="#">contact info</a></li>
-                <li><a href="#">products</a></li>
-                <li><a href="#">?</a></li>
+                <li><a href="#">store</a></li>
+                <li><a href="#">about me</a></li>
             </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>the<br>real<br>sound</h1>
+            </div>
+            <div class="right-col">
+                <p>click here to listen</p>
+                <img src="media/play.png"  id="icon">
+            </div>
+        
         </div>
 
     </div>
-    
+
+    <audio id="mySong">
+        <source src="media/short-new drip.mp3" type="audio/mp3">
+    </audio>
+
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(mySong.paused){
+                mySong.play();
+                icon.src = "media/pause.png";
+            }else{
+                mySong.pause();
+                icon.src = "media/play.png";
+            }
+        }
+    </script>
+    <div class="footer">
+        
+    </div>
 </body>
 </html>
