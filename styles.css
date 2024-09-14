@@ -35,19 +35,72 @@ body{
     cursor: pointer;
 }
 
-.navbar ul li{
-    right: auto;
+.navbar ul{
+    width: 100%;
     list-style: none;
-    display: inline-block;
-    margin: 0 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.navbar ul li a {
+.navbar li{
+  height: 50px;
+  
+}
+
+.navbar a{
+    height: 100%;
+    padding: 10px 20px; /* Adjust padding for better spacing */
+    margin: 0 10px; /* Add horizontal margin for space between links */
     text-decoration: none;
-    color: red;
-    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: black;
 }
 
+.navbar a:hover{
+    background-color: white;
+}
+.sidebar {
+    position: fixed; /* Fixed position for sidebar */
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(3, 0, 0, 0.171);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding:  50px 22px; /* Add padding for inner spacing */
+    transition: transform 0.3s ease; /* Smooth transition for showing/hiding */
+}
+.sidebar ul{
+    width: 100%;
+    list-style: none;
+}
+.sidebar a{
+    height: 100%;
+    padding: 30px 20px; /* Adjust padding for better spacing */
+    margin: 0 10px; /* Add horizontal margin for space between links */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a:hover{
+    background-color: grey;
+    transition: 0.7s ease-in;
+}
+
+.sidebarsss{
+    transform: translateX(100%); /* Hide sidebar off-screen */
+}
 .content {
     width: 100%;
     position: absolute;
@@ -85,4 +138,10 @@ align-items: center;
 #icon{
     width: 80px;
     cursor: pointer; 
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display:none;
+    }
 }
