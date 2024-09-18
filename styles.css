@@ -30,9 +30,10 @@ body{
 }
 
 .logo{
-    margin-top: -30px;
+    margin-top: -50px;
     width: 140px;
     cursor: pointer;
+
 }
 
 .navbar ul{
@@ -141,6 +142,9 @@ align-items: center;
 }
 
 @media(max-width: 800px){
+    .logo{
+        display: none;
+    }
     .hideOnMobile{
         display:none;
     }
