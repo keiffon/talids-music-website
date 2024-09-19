@@ -67,7 +67,7 @@ body{
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
+    width: 100%;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.39);
     backdrop-filter: blur(10px);
@@ -84,8 +84,8 @@ body{
     list-style: none;
 }
 .sidebar a{
-    height: 200%;
-    padding: 30px 20px; /* Adjust padding for better spacing */
+    height: 100%;
+    padding: 40px 40px; /* Adjust padding for better spacing */
     margin: 0 10px; /* Add horizontal margin for space between links */
     text-decoration: none;
     display: flex;
@@ -99,9 +99,6 @@ body{
     transition: 0.7s ease-in;
 }
 
-.sidebarsss{
-    transform: translateX(100%); /* Hide sidebar off-screen */
-}
 .content {
     width: 100%;
     position: absolute;
