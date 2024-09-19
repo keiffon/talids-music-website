@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: sans-serif;}
+
+    body{
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-color: #000000;
+    }
+    .title{
+        color:white;
+        align-items: center;
+    }
+    h1{color: white;}
+
+    .navbar{
+        width: 100%;
+        margin: auto;
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: top 0.3s;
+        position: fixed;
+        overflow: hidden;
+        
+    }
+    
+    .logo{
+        margin-top: -50px;
+        width: 140px;
+        cursor: pointer;
+    
+    }
+    
+    .navbar ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: white;
+    }
+    
+    .navbar li{
+      height: 50px;
+      color: white;
+      font-display: white;
+      
+    }
+    
+    .navbar a{
+        height: 100%;
+        padding: 10px 20px; /* Adjust padding for better spacing */
+        margin: 0 10px; /* Add horizontal margin for space between links */
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+    }
+    
+    .navbar a:hover{
+        background-color: #f80303;
+    }
+    .sidebar {
+        position: fixed; /* Fixed position for sidebar */
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.39);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px #fcfcfc;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding:  50px 22px; /* Add padding for inner spacing */
+        transition: transform 0.3s ease; /* Smooth transition for showing/hiding */
+    }
+    .sidebar ul{
+        width: 100%;
+        list-style: none;
+    }
+    .sidebar a{
+        height: 100%;
+        padding: 40px 40px; /* Adjust padding for better spacing */
+        margin: 0 10px; /* Add horizontal margin for space between links */
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        box-shadow: -10px 0 10px rgba(243, 242, 242, 0.1);
+    }
+    
+    .sidebar a:hover{
+        background-color: grey;
+        transition: 0.7s ease-in;
+    }
+    .opensidebar{
+        background-color: white;
+    }
