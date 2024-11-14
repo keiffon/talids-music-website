@@ -2,62 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>talids Music website</title>
+    <title>Talid website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body>
-    
-    <div class="container">
-        <div class="navbar">
-            <img src="media/IMG_0697-removebg-preview.png" class="logo">
-            <ul>
-                <li class="hideOnMobile"><a href="#">home</a></li>
-                <li class="hideOnMobile"><a href="/webpages/musicpage.html">music</a></li>
-                <li class="hideOnMobile"><a href="#">contact info</a></li>
-                <li class="hideOnMobile"><a href="#">store</a></li>
-                <li class="hideOnMobile"><a href="#">about me</a></li>
-                <li onclick = showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-            </ul>
+    <header>
+        <a href="#" class="brand">talid</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+            <a href="#">Home</a>
+            <a href="#">contacts</a>
+            <a href="#">about</a>
+            <a href="#">music</a>
+            <a href="#">shop</a>
+            </div>
         </div>
-        <div class="sidebar">
-            <ul><li onclick= hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="39px" viewBox="0 -960 960 960" width="78px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-                <li><a href="#">home</a></li>
-                <li><a href="/webpages/musicpage.html">music</a></li>
-                <li><a href="#">contact info</a></li>
-                <li><a href="#">store</a></li>
-                <li><a href="#">about me</a></li>
-            </ul>
-        </div>
+    </header>
+
+    <section class="home">
+        <video class="video-slide" src="videos/Lil Short - Elevate.mp4" autoplay muted loop></video>
         <div class="content">
 
-            <div class="right-col">
-                <p>Click to play</p>
-                <img src="media/play.png"  id="icon">
-            </div>
-        
+            <h1>talid.<br><span>music</span></h1>
+            <p>music for all ears</p>
+            <a href="#">More Music</a>
         </div>
+        <div class="media-icons">
+            <a href="#" ><i class="fab fa-facebook-f"></i></a>
+            <a href="#" ><i class="fab fa-instagram"></i></a>
+            <a href="#" ><i class="fab fa-twitter"></i></a>
+            <div class="mutebutn"></div>
+        </div>
+    </section>
 
-    </div>
-    
-
-    <audio id="mySong">
-        <source src="media/short-new drip.mp3" type="audio/mp3">
-    </audio>
     <script src="script.js"></script>
-	<footer>
-		<p>Shortt Lyfe</p>
-		<p>support my other channels</p>
-		<div class="social">
-			<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-			<a href="https://www.instagram.com/itsashorttlyfe/"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-dribbble"></i></a>
-		</div>
-		<p class="end">CopyRight By Keiffon broxton</p>
-	</footer>
+    
 </body>
 </html>
